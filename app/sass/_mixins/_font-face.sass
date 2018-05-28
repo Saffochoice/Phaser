@@ -10,3 +10,13 @@
 		@else
 			src: url('#{$file-path}.eot')
 			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+@mixin tr($color)
+	border: 1px solid $color
+	transition: 0.3s
+	color: $color
+	cursor: pointer
+	&:hover
+		border: 1px solid $color
+		background-color: $color
+		color: white
